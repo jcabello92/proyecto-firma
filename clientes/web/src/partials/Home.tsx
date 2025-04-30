@@ -1,0 +1,37 @@
+import { HomeIcon } from "@heroicons/react/20/solid";
+
+interface props {
+  theme: string;
+}
+
+export default function Home({ theme }: props) {
+  return (
+    <div
+      className={
+        theme === "light"
+          ? "pt-10 bg-slate-100 px-4 sm:px-6 lg:px-8"
+          : "pt-10 bg-slate-600 px-4 sm:px-6 lg:px-8"
+      }
+    >
+      <nav aria-label="Breadcrumb" className="flex">
+        <ol role="list" className="flex items-center space-x-4">
+          <li>
+            <div>
+              <a
+                href=""
+                className={
+                  theme === "light"
+                    ? "text-lg title-light"
+                    : "text-lg title-dark"
+                }
+              >
+                <HomeIcon aria-hidden="true" className="size-7 shrink-0" />
+                <span className="sr-only">Home</span>
+              </a>
+            </div>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  );
+}

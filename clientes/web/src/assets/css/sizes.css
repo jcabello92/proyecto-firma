@@ -1,0 +1,13 @@
+.main {
+  height: calc(100dvh - 64px);
+}
+
+.tickets-tecnico-list {
+  height: calc(100dvh - 258px);
+  min-height: 180px;
+}
+
+.tickets-usuario-list {
+  height: calc(100dvh - 350px);
+  min-height: 180px;
+}
